@@ -1,0 +1,12 @@
+git init -> inicia o git na pasta criando o .git
+
+git log -> mostra o log de ocorrencias
+
+git branch nome -> cria um branch
+git branch --list -> mostra os branchs
+git branch -D nome -> deleta um branch
+git branch -M oldnome newnome -> renomeia o branch
+git branch -C oldnome newnome -> copia o branch para outro branch
+
+git switch -> troca o branch ativo
+
