@@ -1,12 +1,41 @@
-git init -> inicia o git na pasta criando o .git
+#configurar
 
-git log -> mostra o log de ocorrencias
+    git config --global user.name "nome" -----> cria usuário
+    git config --global user.email "email" -----> seta o emaildo usuário
+    git config --global core.editor nomeeditor -----> seta o editor
 
-git branch nome -> cria um branch
-git branch --list -> mostra os branchs
-git branch -D nome -> deleta um branch
-git branch -M oldnome newnome -> renomeia o branch
-git branch -C oldnome newnome -> copia o branch para outro branch
+    git config --list -----> retorna todas as configurações realizadas
+    git config user.name -----> retorna o nome cadastrado
+    git config user.email -----> retorna o email cadastrado
+    git config core.editor -----> retorna o editor setado
 
-git switch -> troca o branch ativo
+#comandos básicos
+
+    git init -----> inicia o git na pasta criando o .git
+    git add comando -----> (.) ou (-A) adiciona o repositorio para monitoramento do git.
+                           (nome) adiciona só o arquivo
+    git commit -m "comentario" -----> comita o reposítório criando ou modificando a versão.
+    git log -----> mostra o log de ocorrencias
+    git status -----> mostra o que tem pra fazer
+
+#branch
+
+    git branch --list -----> mostra a lista de brunch
+    git branch nome -----> cria um novo branch
+    git checkout nomebranch -----> muda o branch   
+    git branch -D nome -----> deleta um branch
+    git branch -M oldnome newnome -----> renomeia o branch
+    git branch -C oldnome newnome -----> copia o branch para outro branch
+
+#reset
+
+    git reset --tipo codigocommit -----> (hard) volta ao commit desejado, deletando todas as modificações.
+                                         (soft) volta ao commit desejado porém ao momento antes do commit, mantendo arquivos e modificações não commitadas.
+                                         (mixed) volta o commit desejado porém os arquivos antes do add.
+
+
+
+
+
+
 
