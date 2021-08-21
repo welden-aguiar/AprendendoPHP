@@ -39,6 +39,14 @@
     git diff --name-only -----> mostra apenas o nome do arquivo que foi modificado.
     git checkout HEAD -- nomearquivo -----> apaga mudanças realizadas no arquivo antes de add.
 
+#remote
+
+    git remote add nome("normalmente origin") git@github.com:usuario/repositorio.git -----> cria um add remote que vai para o repositorio via ssh
+    git remote add nome("normalmente origin") https://github.com/usuario/repositorio.git -----> cria um add remote que vai para o repositorio via autenticação de duas etapas
+    
+    git push -u nomeadd nomebranch -----> envia o branch selecionado no nomebranch do nomeadd para repositorio remoto
+
+
 
 
 
