@@ -33,6 +33,13 @@
                                          (soft) volta ao commit desejado porém ao momento antes do commit, mantendo arquivos e modificações não commitadas.
                                          (mixed) volta o commit desejado porém os arquivos antes do add.
 
+#diff  
+
+    git diff -----> mostra o que foi alterado desde o ultimo commit antes de add.
+    git diff --name-only -----> mostra apenas o nome do arquivo que foi modificado.
+    git checkout HEAD -- nomearquivo -----> apaga mudanças realizadas no arquivo antes de add.
+
+
 
 
 
