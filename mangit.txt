@@ -45,6 +45,8 @@
     git remote add nome("normalmente origin") https://github.com/usuario/repositorio.git -----> cria um add remote que vai para o repositorio via autenticação de duas etapas
     
     git push -u nomeadd nomebranch -----> envia o branch selecionado no nomebranch do nomeadd para repositorio remoto
+    git push nomeadd nomebranch -----> para ficar recommitando no github
+    
 
 
 
