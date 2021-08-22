@@ -44,6 +44,8 @@
     //é criado uma referencia ao repositório na máquina.
     git remote add nome("normalmente origin") git@github.com:usuario/repositorio.git -----> cria um add remote que vai para o repositorio via ssh
     git remote add nome("normalmente origin") https://github.com/usuario/repositorio.git -----> cria um add remote que vai para o repositorio via autenticação de duas etapas
+    git remote -----> visualiza os branchs
+    git remote -v -----> visualiza os branchs com detalhes
     
     git push -u nomeadd nomebranch -----> envia o branch selecionado no nomebranch do nomeadd para repositorio remoto
     git push nomeadd nomebranch -----> para ficar recommitando no github
@@ -65,6 +67,13 @@
     git clone URL -----> cria uma cópia do repositorio no git local.
     //projetos clonados de outra pessoa não permite push, apenas commit local.
     
+#fork -----> contribuindo com outros projetos
+    
+    // Ao clicar em fork no github cria-se um projeto identico ao original porém no seu usuário.
+    // neste projeto forkado pode ser realizado pushs
+    // para levar as alterações para o projeto original clicar em --new pull request--
+    // clica em --create pull request-- comenta e argumenta, e clica novamente em --create pull request--
+    // isso irá ser avaliado pelo dono original que se aceito irá commitar ao projeto original
     
     
     
