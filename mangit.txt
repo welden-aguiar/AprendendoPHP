@@ -40,12 +40,34 @@
     git checkout HEAD -- nomearquivo -----> apaga mudanças realizadas no arquivo antes de add.
 
 #remote
-
+    
+    //é criado uma referencia ao repositório na máquina.
     git remote add nome("normalmente origin") git@github.com:usuario/repositorio.git -----> cria um add remote que vai para o repositorio via ssh
     git remote add nome("normalmente origin") https://github.com/usuario/repositorio.git -----> cria um add remote que vai para o repositorio via autenticação de duas etapas
     
     git push -u nomeadd nomebranch -----> envia o branch selecionado no nomebranch do nomeadd para repositorio remoto
     git push nomeadd nomebranch -----> para ficar recommitando no github
+    
+#revert
+    
+    git revert --no-edit codigoDoCommit -----> cria um commit de revert que reverte o commit anterior, porém sem apagá-lo, só editando os arquivos.
+
+#remover branch remoto
+
+    git push nomeorigin :nomebranch -----> remove branch remoto, ( : ) deleta qualquer coisa do remoto.
+    
+#pull
+
+    git pull nomerepositorio nomebranchdestino -----> puxa as atualizações do repositorio remoto para o repositorio git local.
+
+#clone
+
+    git clone URL -----> cria uma cópia do repositorio no git local.
+    //projetos clonados de outra pessoa não permite push, apenas commit local.
+    
+    
+    
+    
     
 
 
