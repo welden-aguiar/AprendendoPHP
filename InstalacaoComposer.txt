@@ -1,0 +1,22 @@
+//atualizar apt
+sudo apt update
+
+//se não tiver php cli instalar
+sudo apt install php-cli unzip
+
+//se não tiver curl instalar
+sudo snap install curl
+
+//baixar o instalador
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+
+//verificar Hash
+HASH=`curl -sS https://composer.github.io/installer.sig`
+echo HASH
+php -r "if ( hash_file('SHA384', 'composer-setup.php') ==='$HASH') {echo 'Installer verified';} else { echo 'Installer corrupt'; unlink('composer-setup.php');} echo PHP_EOL;"
+
+//se installer verified instalar o composer (global)
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+//verificar se foi instalador
+composer
