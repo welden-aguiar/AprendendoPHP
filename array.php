@@ -4,7 +4,7 @@
     $arr = array(
         "nome" => "welden",
         "idade" => 25,
-        "sexo" => m,
+        "sexo" => 'm',
         35
     );
 
